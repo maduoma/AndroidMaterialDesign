@@ -12,7 +12,6 @@ import com.dodemy.android.androidmaterialdesign.network.ImageRequester;
 import com.dodemy.android.androidmaterialdesign.network.ProductEntry;
 
 import java.util.List;
-
 /**
  * Adapter used to show an asymmetric grid of products, with 2 items in the first column, and 1
  * item in the second column, and so on.

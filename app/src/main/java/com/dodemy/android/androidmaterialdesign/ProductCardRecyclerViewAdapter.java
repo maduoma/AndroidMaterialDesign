@@ -11,7 +11,6 @@ import com.dodemy.android.androidmaterialdesign.network.ImageRequester;
 import com.dodemy.android.androidmaterialdesign.network.ProductEntry;
 
 import java.util.List;
-
 /**
  * Adapter used to show a simple grid of products.
  */
@@ -34,7 +33,12 @@ public class ProductCardRecyclerViewAdapter extends RecyclerView.Adapter<Product
 
     @Override
     public void onBindViewHolder(@NonNull ProductCardViewHolder holder, int position) {
-        // TODO: Put ViewHolder binding code here in MDC-102
+        if (productList != null && position < productList.size()) {
+            ProductEntry product = productList.get(position);
+            holder.productTitle.setText(product.title);
+            holder.productPrice.setText(product.price);
+            imageRequester.setImageFromUrl(holder.productImage, product.url);
+        }
     }
 
     @Override

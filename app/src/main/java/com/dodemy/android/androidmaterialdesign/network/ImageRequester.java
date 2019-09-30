@@ -10,7 +10,6 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.Volley;
 import com.dodemy.android.androidmaterialdesign.application.ShrineApplication;
-
 /**
  * Class that handles image requests using Volley.
  */
